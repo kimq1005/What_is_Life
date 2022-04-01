@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WhatIsLife">
         <activity
+            android:name=".lifeContent_Package.Life_thirdFragment"
+            android:exported="false" />
+        <activity
+            android:name=".lifeContent_Package.LifeContentFrgment"
+            android:exported="false" />
+        <activity
+            android:name=".lifeContent_Package.LifelistFragment"
+            android:exported="false" />
+        <activity
+            android:name=".lifeContent_Package.LifeListFragment"
+            android:exported="false" />
+        <activity
+            android:name=".lifeContent_Package.LifeContentActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
