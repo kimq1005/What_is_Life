@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val intent = Intent(this, LifeContentActivity::class.java)
         startActivity(intent)
+        //깃허브 공부
 
 
     }
