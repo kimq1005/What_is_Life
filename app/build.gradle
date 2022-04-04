@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -68,6 +69,8 @@ dependencies {
     def room_version = "2.3.0"
 
 
+
+
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
     kapt "org.xerial:sqlite-jdbc:3.34.0"
@@ -86,4 +89,8 @@ dependencies {
 
     // LiveData - 데이터의 변경 사항을 알 수 있음
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
+
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation platform('com.google.firebase:firebase-bom:29.2.1')
 }

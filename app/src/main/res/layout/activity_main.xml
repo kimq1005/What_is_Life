@@ -31,17 +31,17 @@
             android:layout_height="150dp"
             android:layout_below="@id/title_TextView"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="@color/cardviewbackgroundcolor"
-            android:background="@drawable/rectangle_view_background" />
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rectangle_view_background"
+            android:backgroundTint="@color/cardviewbackgroundcolor" />
 
         <LinearLayout
-            android:layout_margin="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignStart="@id/firstview"
-            android:layout_alignTop="@id/firstview">
+            android:layout_alignTop="@id/firstview"
+            android:layout_margin="15dp">
 
 
             <TextView
@@ -59,14 +59,13 @@
                 />
 
 
-
             <ImageView
 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginEnd="10dp"
                 android:gravity="end"
-                android:src="@drawable/rectangle_view_background"
-                android:layout_width="50dp"
-                android:layout_height="50dp"/>
+                android:src="@drawable/rectangle_view_background" />
 
 
         </LinearLayout>
@@ -85,16 +84,16 @@
             android:backgroundTint="#66FFFFFF" />
 
         <TextView
-            android:textSize="16sp"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/lifebutton"
+            android:layout_alignTop="@id/lifebutton"
             android:layout_alignEnd="@id/lifebutton"
             android:layout_alignBottom="@id/lifebutton"
-            android:layout_alignTop="@id/lifebutton"
-            android:layout_alignStart="@id/lifebutton"
-            android:textColor="@color/white"
+            android:gravity="center"
             android:text="글 쓰러 가자 "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/secondtitleTextview"
@@ -110,22 +109,38 @@
 
 
         <View
-            android:layout_below="@id/secondtitleTextview"
             android:id="@+id/secondview"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:layout_below="@id/secondtitleTextview"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="@color/cardviewbackgroundcolor"
-            android:background="@drawable/rectangle_view_background" />
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rectangle_view_background"
+            android:backgroundTint="@color/cardviewbackgroundcolor" />
+
+        <TextView
+            android:id="@+id/firebasetokenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/secondview"
+            android:layout_alignTop="@id/secondview"
+            android:layout_alignEnd="@id/secondview"
+            android:gravity="center"
+            android:text="ㅇㅜ와ㅏㅏㅏㅏ" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/secondview"
+            android:layout_alignBottom="@id/secondview"
+            android:layout_alignEnd="@id/secondview"
+            android:gravity="center"
+            android:text="ㅇㅜ와ㅏㅏㅏㅏ" />
 
 
     </RelativeLayout>
-
-
-
-
 
 
 </ScrollView>

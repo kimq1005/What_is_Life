@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1085047489917",
+    "project_id": "what-is-life-70040",
+    "storage_bucket": "what-is-life-70040.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085047489917:android:b97481254ddddfcf62b814",
+        "android_client_info": {
+          "package_name": "test.map.whatislife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085047489917-5is4jvcrmv3e1tbdt45i1idhg434g3ac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAksERQbj_xa75vbKfSzbzNshmtpy5nwNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085047489917-5is4jvcrmv3e1tbdt45i1idhg434g3ac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
