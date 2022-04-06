@@ -8,7 +8,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import test.map.whatislife.TestActivity
+import test.map.whatislife.ui.memory.MemoryActivity
 import test.map.whatislife.databinding.ActivityMainBinding
 import test.map.whatislife.ui.register.RegisterActivity
 
@@ -31,19 +31,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+//        binding.loginButton.setOnClickListener {
+//            initLogin(binding.idEditText.text.toString(), binding.passwordEditText.text.toString())
+//        }
+
         binding.loginButton.setOnClickListener {
-            initLogin(binding.idEditText.text.toString(), binding.passwordEditText.text.toString())
+            val intent = Intent(this , MemoryActivity::class.java)
+            startActivity(intent)
         }
 
 
 
-
-    }
-
-    override fun onStart() {
-        super.onStart()
-        autoLogin(auth?.currentUser)
-        Toast.makeText(baseContext , "로그인 성공",Toast.LENGTH_SHORT).show()
 
     }
 
@@ -52,11 +50,11 @@ class MainActivity : AppCompatActivity() {
             auth?.signInWithEmailAndPassword(email, password)
                 ?.addOnCompleteListener(this){ task->
                     if(task.isSuccessful){
-                        Toast.makeText(baseContext , "로그인 성공",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this , "로그인 성공",Toast.LENGTH_SHORT).show()
                         autoLogin(auth?.currentUser)
                     }else{
                         Toast.makeText(
-                            baseContext, "로그인에 실패 하였습니다.",
+                            this, "로그인에 실패 하였습니다.",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
@@ -66,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun autoLogin(user : FirebaseUser?){
         if(user!=null){
-            val intent = Intent(this, TestActivity::class.java)
+            val intent = Intent(this, MemoryActivity::class.java)
             startActivity(intent)
         }
     }

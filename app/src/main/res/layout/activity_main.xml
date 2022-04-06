@@ -65,8 +65,7 @@
         android:layout_below="@+id/passwordEditText"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/custom_radius_background_light"
-        android:backgroundTint="@color/main_regular_transparent"
+       android:background="@drawable/custom_button"
         android:paddingHorizontal="16dp"
         android:text="로그인"
         android:textColor="@color/white" />
@@ -80,8 +79,7 @@
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/custom_background_dark"
-        android:backgroundTint="@color/main_dark_transparent"
+        android:background="@drawable/cutom_button_dark"
         android:paddingHorizontal="16dp"
         android:text="가입하기"
         android:textColor="@color/white" />
