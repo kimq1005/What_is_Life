@@ -7,6 +7,24 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="mainbackground">#3A4478</color>
+    <color name="mainbackground">#803A4478</color>
     <color name="cardviewbackgroundcolor">#99FFFFFF</color>
+    <color name="gray">#F1F1F1</color>
+    <color name="red">#FF0000</color>
+    <color name="error_red">#B30000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="background">#E2E6ED</color>
+
+    <color name="main_light">#9B66FF</color>
+    <color name="main_regular">#6236FF</color>
+    <color name="main_dark">#532BDF</color>
+
+    <color name="card_background_gray">#EEEEEE</color>
+    <color name="card_background_light_gray">#F8F8F8</color>
+    <color name="button_background_gray">#CCCCCC</color>
+
+    <color name="main_light_transparent">#CC8453DF</color>
+    <color name="main_regular_transparent">#CC6236FF</color>
+    <color name="main_dark_transparent">#CC4020AE</color>
+    <color name="song_detail_card_view_background">#99D6D6D6</color>
 </resources>

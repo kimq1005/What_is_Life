@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="test.map.whatislife">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WhatIsLife">
+        <activity
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:exported="false" />
         <activity
             android:name=".lifeContent_Package.Life_thirdFragment"
             android:exported="false"
@@ -22,12 +30,11 @@
             android:name=".lifeContent_Package.LifelistFragment"
             android:exported="false"
             tools:ignore="Instantiatable" />
-
         <activity
             android:name=".lifeContent_Package.LifeContentActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.login.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,12 +43,12 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".firebase_Package.MyFirebaseMessagingService"
+        <service
+            android:name=".firebase_Package.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
-
         </service>
     </application>
 
