@@ -27,4 +27,16 @@
     <color name="main_regular_transparent">#CC6236FF</color>
     <color name="main_dark_transparent">#CC4020AE</color>
     <color name="song_detail_card_view_background">#99D6D6D6</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlue">#2196F3</color>
+
+
+
+
+    <drawable name="bg_select">#2196F3</drawable>
+    <drawable name="bg">#EEEEEE</drawable>
+
+
 </resources>
